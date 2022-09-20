@@ -1,21 +1,19 @@
-<xmlheader/>
-<core>
-  <VehAvailRQCore Status="a">
-    <VehRentalCore PickUpDateTime="" ReturnDateTime="">
-      <PickUpLocation LocationCode=""/>
-      <ReturnLocation LocationCode=""/>
-    </VehRentalCore>
-    <VendorPrefs>
-      <VendorPref CompanyShortName="" Code="" PreferLevel=""/>
-    </VendorPrefs>
-    <VehPrefs>
-      <VehPref AirConditionInd="" TransmissionType="" AirConditionPref="" TransmissionPref="">
-        <VehType VehicleCategory="" DoorCount=""/>
-        <VehClass Size=""/>
-      </VehPref>
-    </VehPrefs>
-    <SpecialEquipPrefs>
-      <SpecialEquipPref EquipType="" Quantity=""/>
-    </SpecialEquipPrefs>
-  </VehAvailRQCore>
-</core>
+<?xml version="1.0" encoding="utf-8"?>
+<VehAvailRQCore Status="a">
+  <VehRentalCore PickUpDateTime="" ReturnDateTime="">
+    <PickUpLocation LocationCode=""/>
+    <ReturnLocation LocationCode=""/>
+  </VehRentalCore>
+  <VendorPrefs>
+    <VendorPref CompanyShortName="" Code="" PreferLevel=""/>
+  </VendorPrefs>
+  <VehPrefs>
+    <VehPref AirConditionInd="" TransmissionType="" AirConditionPref="" TransmissionPref="">
+      <VehType VehicleCategory="" DoorCount=""/>
+      <VehClass Size=""/>
+    </VehPref>
+  </VehPrefs>
+  <SpecialEquipPrefs>
+    <SpecialEquipPref EquipType="" Quantity=""/>
+  </SpecialEquipPrefs>
+</VehAvailRQCore>

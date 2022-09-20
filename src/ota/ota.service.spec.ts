@@ -10,8 +10,8 @@ import { xml2json, json2xml} from './utils/convert.util';
 
 describe('Test', () => {
     it('Test', async () => {
-      const xmlheader = common.XmlHeader();
-      const pos = common.POS();
+      const xmlheader = await common.XmlHeader();
+      const pos = await common.POS();
       const jsonRq = new VehAvail.VehAvailRateRQ();
 
       const coreDto = new VehAvailRateRQCoreDto();
@@ -42,8 +42,8 @@ describe('Test', () => {
       // const info = jsonRq.RequestInfo(new VehAvailRateRQInfoDto());
 
       let request = {
-        [xmlheader], 
-        core
+        ...xmlheader, 
+        ...core
       }
       const convertedXML = await json2xml(JSON.stringify(request));
 
