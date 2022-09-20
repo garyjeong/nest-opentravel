@@ -1,0 +1,47 @@
+{
+    "OTA_VehAvailRateRQ": {
+      "POS": {
+        "Source": [
+          {
+            "RequestorID": ""
+          },
+          {
+            "RequestorID": {
+              "CompanyName": "FunTravel"
+            }
+          }
+        ]
+      },
+      "VehAvailRQCore": {
+        "VehRentalCore": {
+          "PickUpLocation": "",
+          "ReturnLocation": ""
+        },
+        "VendorPrefs": {
+          "VendorPref": ""
+        },
+        "VehPrefs": {
+          "VehPref": {
+            "VehType": "",
+            "VehClass": ""
+          }
+        },
+        "SpecialEquipPrefs": {
+          "SpecialEquipPref": ""
+        }
+      },
+      "VehAvailRQInfo": {
+        "Customer": {
+          "Primary": {
+            "PersonName": {
+              "GivenName": "Joe",
+              "Surname": "Bailey"
+            }
+          }
+        },
+        "ArrivalDetails": {
+          "OperatingCompany": ""
+        }
+      }
+    }
+  }

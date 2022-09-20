@@ -1,0 +1,64 @@
+{
+  "?xml": {
+    "@_version": "1.0",
+    "@_encoding": "utf-16",
+  },
+  OTA_VehAvailRateRQ: {
+    POS: {
+      Source: [
+        {
+          RequestorID: {
+            CompanyName: {
+              "@_Code": "CP",
+              "@_CodeContext": "BDQB",
+            },
+            "@_Type": "4",
+            "@_ID": "X932",
+          },
+          "@_ISOCountry": "KR",
+          "@_AgentDutyCode": "M9I13M3C12L",
+        },
+        {
+          RequestorID: {
+            "@_Type": "8",
+            "@_ID": "ZR",
+          },
+        },
+      ],
+    },
+    VehAvailRQCore: {
+      VehRentalCore: {
+        PickUpLocation: {
+          "@_LocationCode": "LAX",
+        },
+        ReturnLocation: {
+          "@_LocationCode": "LAX",
+        },
+        "@_PickUpDateTime": "2022-09-23T10:00:00",
+        "@_ReturnDateTime": "2022-09-24T10:00:00",
+      },
+      RateQualifier: {
+        "@_TravelPurpose": "2",
+        "@_CorpDiscountNmbr": "",
+        "@_PromotionCode": undefined,
+        "@_RateQualifier": "KOLAD",
+      },
+      "@_Status": "All",
+    },
+    VehAvailRQInfo: {
+      Customer: {
+        Primary: {
+          "@_BirthDate": "1991-08-07",
+        },
+      },
+      TourInfo: {
+        "@_TourNumber": "IT1006581LAD",
+      },
+    },
+    "@_xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "@_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "@_xsi:schemaLocation": "http://www.opentravel.org/OTA/2003/05 OTA_VehAvailRateRQ.xsd",
+    "@_Version": "1.008",
+    "@_xmlns": "http://www.opentravel.org/OTA/2003/05",
+  },
+}

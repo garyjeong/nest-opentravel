@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-16"?>
+<OTA_VehAvailRateRQ xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTA/2003/05 OTA_VehAvailRateRQ.xsd" Version="1.008" xmlns="http://www.opentravel.org/OTA/2003/05">
+	<POS>    
+		<Source ISOCountry="KR" AgentDutyCode="M9I13M3C12L">
+			<RequestorID Type="4" ID="X932">
+				<CompanyName Code="CP" CodeContext="BDQB"/>
+			</RequestorID>
+		</Source>
+		<Source>
+			<RequestorID Type="8" ID="ZR"/>
+		</Source>  
+	</POS>  
+	<VehAvailRQCore Status="All">
+		<VehRentalCore PickUpDateTime="2022-09-23T10:00:00" ReturnDateTime="2022-09-24T10:00:00">
+			<PickUpLocation LocationCode="LAX"/>
+			<ReturnLocation LocationCode="LAX"/>
+		</VehRentalCore>
+		<RateQualifier TravelPurpose="2" CorpDiscountNmbr="" RateQualifier="KOLAD"/>
+	</VehAvailRQCore>
+	<VehAvailRQInfo>
+		<Customer>
+			<Primary BirthDate="1991-08-07"/>
+		</Customer>
+		<TourInfo TourNumber="IT1006581LAD"/>
+	</VehAvailRQInfo>
+</OTA_VehAvailRateRQ>
