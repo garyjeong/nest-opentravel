@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<Source ISOCountry="KR">
+  <RequesterID Type="4">
+    <CompanyName Code="CP"/>
+  </RequesterID>
+</Source>
 <VehAvailRQCore Status="a">
   <VehRentalCore PickUpDateTime="" ReturnDateTime="">
     <PickUpLocation LocationCode=""/>

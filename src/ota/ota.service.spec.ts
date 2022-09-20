@@ -43,6 +43,7 @@ describe('Test', () => {
 
       let request = {
         ...xmlheader, 
+        ...pos,
         ...core
       }
       const convertedXML = await json2xml(JSON.stringify(request));
