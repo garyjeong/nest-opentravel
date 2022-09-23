@@ -1,19 +1,15 @@
-import { attr } from '../utils/common.util';
+import { attr } from "../utils/common.util";
 
-export const XmlHeader = async (): Promise<Object> => {
+export const xmlHeader = (): Object => {
     return {
         '?xml': {
             [attr('version')]: '1.0',
-            [attr('encoding')]: 'utf-8',
+            [attr('encoding')]: 'utf-16'
         }
     }
 }
 
-export const POS = async (): Promise<Object> => {
-    const CP: string = process.env.ACCESS_CODE_CP;
-    const VN: string = process.env.ACCESS_CODE_VN;
-    const VC: string = process.env.ACCESS_CODE_VC;
-
+export const Source = (CP, VN, VC): Object => {
     return {
         Source: {
             RequesterID: {
@@ -26,6 +22,15 @@ export const POS = async (): Promise<Object> => {
             },
             [attr('ISOCountry')]: 'KR',
             [attr('AgentDutyCode')]: VC
+        }
+    }
+}
+
+export const RequestID = (type, id): Object => {
+    return {
+        RequestorID: {
+            [attr('Type')]: type,
+            [attr('ID')]: id
         }
     }
 }
